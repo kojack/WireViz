@@ -94,7 +94,7 @@ graph {
 	edge [color="#000000:#000000:#000000"]
 	_F1_2:e -- W1:w2:w
 	W1:w2:e -- X1:p2l:w
-	edge [color="#000000:#000000:#000000"]
+	edge [color="#000000:#0066ff:#000000"]
 	_F1_3:e -- W1:w3:w
 	W1:w3:e -- X1:p3l:w
 	edge [color="#000000:#ff0000:#000000"]
@@ -110,7 +110,7 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">4x</td>
-   <td balign="left">0.5 mm²</td>
+   <td balign="left">0.7 mm²</td>
    <td balign="left">0.3 m</td>
   </tr></table>
  </td></tr>
@@ -147,14 +147,14 @@ graph {
    </tr>
    <tr>
     <td></td>
-    <td>BK</td>
+    <td>BU</td>
     <td>X1:3</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#0066ff" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>

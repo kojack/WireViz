@@ -14,8 +14,8 @@ cables:
   W1:
     category: bundle # bundle
     length: 0.3
-    gauge: 0.5 mm2
-    colors: [YE, BK, BK, RD] # custom colors, wirecount is implicit
+    gauge: 0.7 mm2
+    colors: [YE, BK, BU, RD] # custom colors, wirecount is implicit
 
 connections:
   -

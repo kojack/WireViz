@@ -4,23 +4,23 @@ graph {
 	graph [bgcolor=white fontname=arial nodesep=0.33 rankdir=LR ranksep=2]
 	node [fillcolor=white fontname=arial shape=record style=filled]
 	edge [fontname=arial style=bold]
-	X1 [label=<
+	JBOX_Wing_Surface [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">X1</td>
+   <td balign="left">JBOX_Wing_Surface</td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Molex: 22013047</td>
+   <td balign="left">Molex: 22014021</td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">Molex KK 254</td>
    <td balign="left">female</td>
-   <td balign="left">4-pin</td>
+   <td balign="left">12-pin</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -37,20 +37,43 @@ graph {
    <tr>
     <td port="p4r">4</td>
    </tr>
+   <tr>
+    <td port="p5r">5</td>
+   </tr>
+   <tr>
+    <td port="p6r">6</td>
+   </tr>
+   <tr>
+    <td port="p7r">7</td>
+   </tr>
+   <tr>
+    <td port="p8r">8</td>
+   </tr>
+   <tr>
+    <td port="p9r">9</td>
+   </tr>
+   <tr>
+    <td port="p10r">10</td>
+   </tr>
+   <tr>
+    <td port="p11r">11</td>
+   </tr>
+   <tr>
+    <td port="p12r">12</td>
+   </tr>
   </table>
  </td></tr>
 </table>
 > fillcolor=white margin=0 shape=none style=filled]
-	X2 [label=<
+	ACU_Aleron_Port [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">X2</td>
+   <td balign="left">ACU_Aleron_Port</td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">P/N: CON4</td>
    <td balign="left">Molex: 22013047</td>
   </tr></table>
  </td></tr>
@@ -79,11 +102,48 @@ graph {
  </td></tr>
 </table>
 > fillcolor=white margin=0 shape=none style=filled]
-	X3 [label=<
+	ACU_Aleron_Starboard [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">X3</td>
+   <td balign="left">ACU_Aleron_Starboard</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Molex: 22013047</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Molex KK 254</td>
+   <td balign="left">female</td>
+   <td balign="left">4-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+   </tr>
+   <tr>
+    <td port="p3l">3</td>
+   </tr>
+   <tr>
+    <td port="p4l">4</td>
+   </tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor=white margin=0 shape=none style=filled]
+	ACU_SpeedBrake_Port [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">ACU_SpeedBrake_Port</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -117,22 +177,22 @@ graph {
 </table>
 > fillcolor=white margin=0 shape=none style=filled]
 	edge [color="#000000:#895956:#000000"]
-	X1:p1r:e -- W1:w1:w
-	W1:w1:e -- X2:p1l:w
+	JBOX_Wing_Surface:p1r:e -- PORT_side_aleron:w1:w
+	PORT_side_aleron:w1:e -- ACU_Aleron_Port:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
-	X1:p2r:e -- W1:w2:w
-	W1:w2:e -- X2:p2l:w
+	JBOX_Wing_Surface:p2r:e -- PORT_side_aleron:w2:w
+	PORT_side_aleron:w2:e -- ACU_Aleron_Port:p2l:w
 	edge [color="#000000:#ff8000:#000000"]
-	X1:p3r:e -- W1:w3:w
-	W1:w3:e -- X2:p3l:w
+	JBOX_Wing_Surface:p3r:e -- PORT_side_aleron:w3:w
+	PORT_side_aleron:w3:e -- ACU_Aleron_Port:p3l:w
 	edge [color="#000000:#ffff00:#000000"]
-	X1:p4r:e -- W1:w4:w
-	W1:w4:e -- X2:p4l:w
-	W1 [label=<
+	JBOX_Wing_Surface:p4r:e -- PORT_side_aleron:w4:w
+	PORT_side_aleron:w4:e -- ACU_Aleron_Port:p4l:w
+	PORT_side_aleron [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">W1</td>
+   <td balign="left">PORT_side_aleron</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -152,9 +212,9 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>X1:1</td>
+    <td>JBOX_Wing_Surface:1</td>
     <td>BN</td>
-    <td>X2:1</td>
+    <td>ACU_Aleron_Port:1</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -166,9 +226,9 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>X1:2</td>
+    <td>JBOX_Wing_Surface:2</td>
     <td>RD</td>
-    <td>X2:2</td>
+    <td>ACU_Aleron_Port:2</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
@@ -180,9 +240,9 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>X1:3</td>
+    <td>JBOX_Wing_Surface:3</td>
     <td>OG</td>
-    <td>X2:3</td>
+    <td>ACU_Aleron_Port:3</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
@@ -194,9 +254,9 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>X1:4</td>
+    <td>JBOX_Wing_Surface:4</td>
     <td>YE</td>
-    <td>X2:4</td>
+    <td>ACU_Aleron_Port:4</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="6">
@@ -213,22 +273,22 @@ graph {
 </table>
 > fillcolor=white margin=0 shape=box style=""]
 	edge [color="#000000:#ffff00:#000000"]
-	X1:p1r:e -- W2:w1:w
-	W2:w1:e -- X3:p1l:w
+	JBOX_Wing_Surface:p5r:e -- STARBOARD_side_aleron:w1:w
+	STARBOARD_side_aleron:w1:e -- ACU_Aleron_Starboard:p1l:w
 	edge [color="#000000:#000000:#000000"]
-	X1:p2r:e -- W2:w2:w
-	W2:w2:e -- X3:p2l:w
+	JBOX_Wing_Surface:p6r:e -- STARBOARD_side_aleron:w2:w
+	STARBOARD_side_aleron:w2:e -- ACU_Aleron_Starboard:p2l:w
 	edge [color="#000000:#000000:#000000"]
-	X1:p3r:e -- W2:w3:w
-	W2:w3:e -- X3:p3l:w
-	edge [color="#000000:#ff0000:#000000"]
-	X1:p4r:e -- W2:w4:w
-	W2:w4:e -- X3:p4l:w
-	W2 [label=<
+	JBOX_Wing_Surface:p7r:e -- STARBOARD_side_aleron:w3:w
+	STARBOARD_side_aleron:w3:e -- ACU_Aleron_Starboard:p3l:w
+	edge [color="#000000:#0066ff:#000000"]
+	JBOX_Wing_Surface:p8r:e -- STARBOARD_side_aleron:w4:w
+	STARBOARD_side_aleron:w4:e -- ACU_Aleron_Starboard:p4l:w
+	STARBOARD_side_aleron [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">W2</td>
+   <td balign="left">STARBOARD_side_aleron</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -242,9 +302,9 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>X1:1</td>
+    <td>JBOX_Wing_Surface:5</td>
     <td>YE</td>
-    <td>X3:1</td>
+    <td>ACU_Aleron_Starboard:1</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -262,9 +322,9 @@ graph {
     </tr></table>
    </td></tr>
    <tr>
-    <td>X1:2</td>
+    <td>JBOX_Wing_Surface:6</td>
     <td>BK</td>
-    <td>X3:2</td>
+    <td>ACU_Aleron_Starboard:2</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
@@ -282,9 +342,9 @@ graph {
     </tr></table>
    </td></tr>
    <tr>
-    <td>X1:3</td>
+    <td>JBOX_Wing_Surface:7</td>
     <td>BK</td>
-    <td>X3:3</td>
+    <td>ACU_Aleron_Starboard:3</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
@@ -302,15 +362,129 @@ graph {
     </tr></table>
    </td></tr>
    <tr>
-    <td>X1:4</td>
-    <td>RD</td>
-    <td>X3:4</td>
+    <td>JBOX_Wing_Surface:8</td>
+    <td>BU</td>
+    <td>ACU_Aleron_Starboard:4</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#0066ff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td colspan="3">
+    <table border="0" cellspacing="0" cellborder="0"><tr>
+     <td>P/N: WIRE3</td>
+     <td>WiresCo: W1-RD</td>
+    </tr></table>
+   </td></tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor=white margin=0 shape=box style="filled,dashed"]
+	edge [color="#000000:#895956:#000000"]
+	JBOX_Wing_Surface:p9r:e -- PORT_speed_brake:w1:w
+	PORT_speed_brake:w1:e -- ACU_SpeedBrake_Port:p1l:w
+	edge [color="#000000:#ff0000:#000000"]
+	JBOX_Wing_Surface:p10r:e -- PORT_speed_brake:w2:w
+	PORT_speed_brake:w2:e -- ACU_SpeedBrake_Port:p2l:w
+	edge [color="#000000:#ff8000:#000000"]
+	JBOX_Wing_Surface:p11r:e -- PORT_speed_brake:w3:w
+	PORT_speed_brake:w3:e -- ACU_SpeedBrake_Port:p3l:w
+	edge [color="#000000:#ffff00:#000000"]
+	JBOX_Wing_Surface:p12r:e -- PORT_speed_brake:w4:w
+	PORT_speed_brake:w4:e -- ACU_SpeedBrake_Port:p4l:w
+	PORT_speed_brake [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">PORT_speed_brake</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">4x</td>
+   <td balign="left">0.25 mm²</td>
+   <td balign="left">1 m</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>JBOX_Wing_Surface:9</td>
+    <td>BN</td>
+    <td>ACU_SpeedBrake_Port:1</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td colspan="3">
+    <table border="0" cellspacing="0" cellborder="0"><tr>
+     <td>P/N: WIRE1</td>
+     <td>WiresCo: W1-YE</td>
+    </tr></table>
+   </td></tr>
+   <tr>
+    <td>JBOX_Wing_Surface:10</td>
+    <td>RD</td>
+    <td>ACU_SpeedBrake_Port:2</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td colspan="3">
+    <table border="0" cellspacing="0" cellborder="0"><tr>
+     <td>P/N: WIRE2</td>
+     <td>WiresCo: W1-BK</td>
+    </tr></table>
+   </td></tr>
+   <tr>
+    <td>JBOX_Wing_Surface:11</td>
+    <td>OG</td>
+    <td>ACU_SpeedBrake_Port:3</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff8000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td colspan="3">
+    <table border="0" cellspacing="0" cellborder="0"><tr>
+     <td>P/N: WIRE2</td>
+     <td>WiresCo: W1-BK</td>
+    </tr></table>
+   </td></tr>
+   <tr>
+    <td>JBOX_Wing_Surface:12</td>
+    <td>YE</td>
+    <td>ACU_SpeedBrake_Port:4</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>

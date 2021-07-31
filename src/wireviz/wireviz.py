@@ -35,7 +35,7 @@ def parse(yaml_input: str, file_out: (str, Path) = None, return_types: (None, st
     yaml_data = yaml.safe_load(yaml_input)
 
     harness = Harness()
-
+ 
     # add items
     sections = ['connectors', 'cables', 'connections']
     types = [dict, dict, list]
@@ -180,6 +180,7 @@ def parse(yaml_input: str, file_out: (str, Path) = None, return_types: (None, st
             harness.add_bom_item(line)
 
     if file_out is not None:
+        print ("PARSE ", file_out)
         harness.output(filename=file_out, fmt=('png', 'svg'), view=False)
 
     if return_types is not None:
@@ -250,7 +251,7 @@ def main():
     else:
         file_out = args.output_file
     file_out = os.path.abspath(file_out)
-
+    print ("file output ", file_out)
     parse(yaml_input, file_out=file_out)
 
 

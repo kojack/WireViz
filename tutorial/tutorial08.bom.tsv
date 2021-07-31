@@ -1,8 +1,12 @@
 Item	Qty	Unit	Designators	P/N	Manufacturer	MPN
-Connector, Molex KK 254, female, 4 pins	2		X1, X3		Molex	22013047
-Connector, Molex KK 254, female, 4 pins	1		X2	CON4	Molex	22013047
-Cable, 4 x 0.25 mm²	1	m	W1	CAB1	CablesCo	ABC123
-Wire, 0.25 mm², BK	2	m	W2	WIRE2	WiresCo	W1-BK
-Wire, 0.25 mm², RD	1	m	W2	WIRE3	WiresCo	W1-RD
-Wire, 0.25 mm², YE	1	m	W2	WIRE1	WiresCo	W1-YE
-Label, pinout information	2		X2, X3	Label-ID-1	generic company	Label1
+Connector, Molex KK 254, female, 12 pins	1		JBOX_Wing_Surface		Molex	22014021
+Connector, Molex KK 254, female, 4 pins	3		ACU_Aleron_Port, ACU_Aleron_Starboard, ACU_SpeedBrake_Port		Molex	22013047
+Cable, 4 x 0.25 mm²	1	m	PORT_side_aleron	CAB1	CablesCo	ABC123
+Wire, 0.25 mm², BK	2	m	STARBOARD_side_aleron	WIRE2	WiresCo	W1-BK
+Wire, 0.25 mm², BN	1	m	PORT_speed_brake	WIRE1	WiresCo	W1-YE
+Wire, 0.25 mm², BU	1	m	STARBOARD_side_aleron	WIRE3	WiresCo	W1-RD
+Wire, 0.25 mm², OG	1	m	PORT_speed_brake	WIRE2	WiresCo	W1-BK
+Wire, 0.25 mm², RD	1	m	PORT_speed_brake	WIRE2	WiresCo	W1-BK
+Wire, 0.25 mm², YE	1	m	STARBOARD_side_aleron	WIRE1	WiresCo	W1-YE
+Wire, 0.25 mm², YE	1	m	PORT_speed_brake	WIRE3	WiresCo	W1-RD
+Label, pinout information	2		ACU_Aleron_Port, ACU_Aleron_Starboard, ACU_SpeedBrake_Port	Label-ID-1	generic company	Label1
